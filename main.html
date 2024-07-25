@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Academic Homepage</title>
+    <style>
+        body {
+            font-family: Times, sans-serif;
+            background-image: url(y2k-clouds.jpg);
+            /* background-color: #e6e6fa; /* Light yellow-green */
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            background-color: #e8b5Bd;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            padding: 20px;
+            border-radius: 8px;
+        }
+        h1 {
+            font-size: 28px;
+            text-align: center;
+            color: #4a90e2;
+            margin-bottom: 20px;
+        }
+        h2 {
+            font-size: 24px;
+            color: #4a90e2; /* Vivid blue */
+            margin-top: 30px;
+        }
+        p {
+            line-height: 1.6;
+            color: #555555; /* Dark gray */
+        }
+        ul {
+            list-style-type: square;
+            color: #333333; /* Darker gray */
+        }
+        footer {
+            text-align: center;
+            margin-top: 30px;
+            color: #777777; /* Gray */
+        }
+        a {
+            color: #4a90e2; /* Vivid blue */
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        .thumbnail {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .thumbnail img {
+            width: 200px;
+            height: auto;
+            border-radius: 50%;
+            border: 5px solid #4a90e2; /* Vivid blue */
+            box-shadow: 0 0 10px rgba(0,0,0,0.2);
+        }
+
+        /* Define the animation */
+        @keyframes rotate {
+            from {
+                transform: rotate(0deg);
+            }
+            to {
+                transform: rotate(360deg);
+            }
+        }
+
+        /* Apply the animation to the image */
+        .rotate-img {
+            width: 200px; /* Adjust size as needed */
+            animation: rotate 5s linear infinite; /* duration, timing function, iteration count */
+        }
+        @keyframes bounce {
+            0%, 100% {
+                transform: translateY(0);
+            }
+            50% {
+                transform: translateY(-40px); /* Adjust the height of the bounce */
+            }
+        }
+
+        /* Apply the animation to the image */
+        .bounce-img {
+            display: inline-block;
+            animation: bounce 2s ease infinite; /* duration, timing function, iteration count */
+        }
+
+
+        /* Define the size change animation */
+        @keyframes resize {
+            0%, 100% {
+                width: 100px; /* Original size */
+            }
+            50% {
+                width: 200px; /* Enlarged size */
+            }
+        }
+
+        /* Apply the animation to the image */
+        .resize-img {
+            display: inline-block;
+            animation: resize 3s ease infinite; /* duration, timing function, iteration count */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Michael Rizvi-Martel</h1>
+        </header>
+        
+        <div class="thumbnail">
+            <img src="https://via.placeholder.com/200" alt="John Doe">
+        </div>
+
+        <nav>
+            <ul>
+                <li><a href="#about">About me</a></li>
+                <li><a href="#news">News</a></li>
+                <li><a href="#publications">Publications</a></li>
+                <li><a href="#talks">Talks</a></li>
+                <li><a href="#cv">CV</a></li>
+            </ul>
+        </nav>
+
+        <section id="about">
+            <h2>About me</h2>
+            <p>
+                Welcome to my page!
+                <br>
+                <br>
+                My name is Michael and I am a PhD student in Computer Science at <a href="https://mila.quebec/en">Mila</a> and Université de Montréal. I am supervised by both prof. <a href="https://www-labs.iro.umontreal.ca/~grabus/index.php?page=Home">Guillaume Rabusseau</a> and prof. <a href="https://www.adamoberman.net/">Adam Oberman</a>.
+
+                <br>
+                <br>
+                My current research interests are all over the place. But generally I am interested in neurosymbolic AI (especially its applications to proof generation in mathematics!) 
+                as well as better understanding the intersection between learning and “reasoning” tasks through the lense of algorithmic reasoning (bonus points for using tools from theoretical CS).
+                Asides from that I am also tangentially interested in questions concerning identifiability and representation learning (more recently the disentangled variety).
+
+                <br>
+                <br>
+                When I am not publishing or perishing, you can find me rock climbing, hiking or canoe camping!
+            </p>
+        </section>
+
+        <section id="news">
+            <h2>News</h2>
+            <ul>
+                <li>Presented at Conference X (July 2002)</li>
+                <li>Received Grant Y (February 2001)</li>
+            </ul>
+        </section>
+
+        <section id="publications">
+            <h2>Publications</h2>
+            <ul>
+                <li>Lizaire, <em>M., Rizvi-Martel</em>, M., Gamal, M., &amp; Rabusseau, G. A Tensor Decomposition Perspective on Second-order RNNs. In Forty-first International Conference on Machine Learning. (Spotlight!)</li>
+                <li><em>Rizvi-Martel M.</em>, Lizaire, M., Lacroce, C., &amp; Rabusseau, G. (2024, April). Simulating weighted automata over sequences and trees with transformers. In International Conference on Artificial Intelligence and Statistics (pp. 2368-2376). PMLR.</li>
+            </ul>
+        </section>
+
+        <section id="talks">
+            <h2>Talks</h2>
+            <ul>
+                <li>"Simulating Weighted Automata over Sequences and Trees with Transformers" -  FLaNN Seminar Series, May 2024 <a href=#>Slides</a> <a href=https://www.youtube.com/watch?v=YD5lptT3tZQ&t=90s>Recording</a> </li>
+                <li>"LLMs and How to Use Them" -  Seminar at the Center for Advanced Research in Sleep Medicine, February 2024 <a href=https://docs.google.com/presentation/d/1Gb3rURH5plP__XP4i8yFbmV6Jl08EBGw2EblYMuVsKo/edit?usp=sharing>Slides</a>
+            </ul>
+        </section>
+
+        <section id="cv">
+            <h2>CV</h2>
+            <p>Download my CV <a href="#">here</a>.</p>
+        </section>
+
+
+        <section id="Socials">
+            <h2>Socials</h2>
+            <a href=https://scholar.google.ca/citations?user=zVBPRhcAAAAJ&hl=en>
+            <img src="clear-google-scholar.png" alt="google scholar" style="width:100px", class="bounce-img">
+            </a>
+
+            <a href=https://www.instagram.com/frisbeemortel/>
+            <img src="insta-logo.webp" alt="instagram" style="width:100px", class="rotate-img">
+            </a>
+
+            <a href=https://github.com/michaelrizvi>
+            <img src="github-logo.png" alt="github" style="width:100px", class="resize-img">
+            </a>
+        </section>
+
+        <footer>
+            <p>&copy; 2024 Michael Rizvi-Martel. All rights reserved.</p>
+        </footer>
+    </div>
+</body>
+</html>

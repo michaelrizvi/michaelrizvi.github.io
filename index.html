@@ -3,104 +3,60 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Academic Homepage</title>
+    <title>Michael Rizvi-Martel</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="container">
-        <header class="header">
-            <img src="sparkle.gif" alt="Sparkle", style="width:100px">
+    <div class="row">
+        <div class="left">
             <h1>Michael Rizvi-Martel</h1>
-            <img src="sparkle.gif" alt="Sparkle", style="width:100px">
-        </header>
-        <div class="image-container">
-            <img src="profile.png" alt="Me" class="pop-image">
-            <div class="text-bubble">
-                <p>
-               Hey I'm Michael!<br> Click <a href="cats.html">here</a> for pictures of my cat 
-                </p>
-            </div>
-        </div>
-        <nav>
+            <p>Hi! I'm Michael, a PhD student in Computer Science at <a href="https://mila.quebec/en">Mila</a> and Université de Montréal.
+                 I am co-supervised by <a href="https://www-labs.iro.umontreal.ca/~grabus/index.php?page=Home">Guillaume Rabusseau</a> (UdeM & Mila) 
+                 and <a href="https://www.adamoberman.net/">Adam Oberman</a> (McGill & LawZero).
+                I am also fortunate to be mentored by <a href="https://www.mhahn.info/">Michael Hahn</a>.</p>
+
+
+            <p>My research interests are all over the place, but I am generally interested in better understanding the limitations and capacities of modern AI systems. My work is guided by questions such as:</p>
             <ul>
-                <li><a href="#about">About me</a></li>
-                <li><a href="#news">News</a></li>
-                <li><a href="#publications">Publications</a></li>
-                <li><a href="#talks">Talks</a></li>
-                <li><a href="#cv">CV</a></li>
+                <li>Why do LLMs sometimes fail on tasks that appear simple yet excel on certain tasks difficult for humans?</li>
+                <li>What fundamental principles govern learning in these models?</li>
             </ul>
-        </nav>
+            <p>So far, this has led me to a blend of interpretability and theoretical research. I strongly believe that understanding AI systems more deeply can help us make them safer, anticipate future technological developments, and design better-informed policies.</p>
 
-        <section id="about">
-            <h2>About me</h2>
-            <p>
-                Welcome to my page!
-                <br>
-                <br>
-                My name is Michael and I am a PhD student in Computer Science at <a href="https://mila.quebec/en">Mila</a> and Université de Montréal. 
-                I am co-supervised by prof. <a href="https://www-labs.iro.umontreal.ca/~grabus/index.php?page=Home">Guillaume Rabusseau</a> and prof. <a href="https://www.adamoberman.net/">Adam Oberman</a>.
-                <br>
-                <br>
-                My research interests are all over the place, but I am generally interested in the intersection between Deep Learning (DL) and Theoretical Computer Science (TCS).
-                On one hand, I believe that TCS presents a useful set of tools for analyzing the ability to "reason step by step" in modern language models.
-                On the other hand, I believe <a href="https://bair.berkeley.edu/blog/2024/02/18/compound-ai-systems/">compound AI systems</a> that use generative models and formal verification in tandem offer a great near-term solution to the development of robust AI.
-                <br>
-                <br>
-                Asides from this, I am equally working on projects relating to quantum circuit generation using generative AI and disentangled representation learning in SSL.
-                <br>
-                <br>
-                Overall, my goal is to better understand the limitations of modern AI when it comes to complex reasoning tasks and (hopefully!) 
-                design future AI systems which overcome such limitations.
-                <br>
-                <br>
-                When I am not doing research, you can find me rock climbing, hiking or canoe camping! 
-                I am also an avid guitar player and love discovering new (and old) restaurants in the Montréal area :)
-            </p>
-        </section>
-
-        <section id="news">
-            <h2>News</h2>
+            <p><strong>News</strong></p>
             <ul>
-                <li>Our paper with Maude Lizaire was chosen for an ICML spotlight!</li>
+                <li>I will be presenting two novel workshope papers at NeurIPS 2025: the first at <a href="https://reasoning-workshop.github.io/">FoRLM</a> (Foundations of Reasoning in Language Models)
+                and the second at <a href="https://transformerstheory.github.io/">WCTD</a> (What Can('t) Transformers Do).</li>
             </ul>
-        </section>
 
-        <section id="publications">
-            <h2>Publications</h2>
+            <p><strong>Selected Publications</strong></p>
             <ul>
-                <li>Lizaire, M., <b>Rizvi-Martel</b>, M., Gamal, M., &amp; Rabusseau, G. A Tensor Decomposition Perspective on Second-order RNNs. In Forty-first International Conference on Machine Learning. <b>(Spotlight!)</b></li>
-                <li><b>Rizvi-Martel M.</b>, Lizaire, M., Lacroce, C., &amp; Rabusseau, G. (2024, April). Simulating weighted automata over sequences and trees with transformers. In International Conference on Artificial Intelligence and Statistics (pp. 2368-2376). PMLR.</li>
+                <li>Lizaire, M., <strong>Rizvi-Martel, M.</strong>, Gamal, M., &amp; Rabusseau, G. A Tensor Decomposition Perspective on Second-order RNNs. In Forty-first International Conference on Machine Learning. <strong>(Spotlight!)</strong></li>
+                <li><strong>Rizvi-Martel, M.</strong>, Lizaire, M., Lacroce, C., &amp; Rabusseau, G. (2024, April). Simulating weighted automata over sequences and trees with transformers. In International Conference on Artificial Intelligence and Statistics (pp. 2368-2376). PMLR.</li>
             </ul>
-        </section>
 
-        <section id="talks">
-            <h2>Talks</h2>
+            <p><strong>Talks</strong></p>
             <ul>
-                <li>"Simulating Weighted Automata over Sequences and Trees with Transformers" -  FLaNN Seminar Series, May 2024 <a href=#>Slides</a> <a href=https://www.youtube.com/watch?v=YD5lptT3tZQ&t=90s>Recording</a> </li>
-                <li>"LLMs and How to Use Them" -  Seminar at the Center for Advanced Research in Sleep Medicine, February 2024 <a href=https://docs.google.com/presentation/d/1Gb3rURH5plP__XP4i8yFbmV6Jl08EBGw2EblYMuVsKo/edit?usp=sharing>Slides</a>
+                <li>"Simulating Weighted Automata over Sequences and Trees with Transformers" - FLaNN Seminar Series, May 2024. [<a href="https://www.youtube.com/watch?v=YD5lptT3tZQ&t=90s">video</a>]</li>
+                <li>"LLMs and How to Use Them" - Seminar at the Center for Advanced Research in Sleep Medicine, February 2024. [<a href="https://docs.google.com/presentation/d/1Gb3rURH5plP__XP4i8yFbmV6Jl08EBGw2EblYMuVsKo/edit?usp=sharing">slides</a>]</li>
             </ul>
-        </section>
 
-        <section id="cv">
-            <h2>CV</h2>
+            <p><strong>CV</strong></p>
             <p>Download my CV <a href="academic_cv_michaelrizvi.pdf">here</a>.</p>
-        </section>
 
+            <p><strong>Fun</strong></p>
+            <p>When I am not doing research, you can find me rock climbing, hiking or canoe camping! I am also an avid guitar player and love discovering new (and old) restaurants in the Montréal area. I even made a <a href="https://github.com/mmarius/montreal-things-to-do">list</a> for anyone that may be travelling to Montreal. Oh, and I have a <a href="cats.html">cat</a>.</p>
 
-        <section id="Links">
-            <h2>Socials</h2>
-            <a href=https://scholar.google.ca/citations?user=zVBPRhcAAAAJ&hl=en>
-            <img src="clear-google-scholar.png" alt="google scholar" style="width:100px">
-            </a>
-
-            <a href=https://github.com/michaelrizvi>
-            <img src="github-logo.png" alt="github" style="width:100px">
-            </a>
-        </section>
-
-        <footer>
-            <p>&copy; 2024 Michael Rizvi-Martel. All rights reserved.</p>
-        </footer>
+            <p>You can reach me at rizvi-martel [dot] michael [at] umontreal [dot] ca.</p>
+        </div>
+        <div class="right">
+            <img src="profile.jpg" alt="Michael Rizvi-Martel">
+            <p style="margin-top: 10px;">
+                <a href="https://scholar.google.ca/citations?user=zVBPRhcAAAAJ&hl=en">google scholar</a> /
+                <a href="https://github.com/michaelrizvi">github</a> /
+                <a href="https://x.com/frisbeemortel">twitter</a>
+            </p>
+        </div>
     </div>
 </body>
 </html>

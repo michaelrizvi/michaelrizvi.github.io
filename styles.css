@@ -86,6 +86,141 @@ a:hover {
     border-radius: 4px;
 }
 
+/* Blog post layout */
+.blog-post {
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 40px 20px;
+}
+
+.blog-header {
+    margin-bottom: 40px;
+}
+
+.blog-home-link {
+    font-size: 14px;
+    color: #666;
+    text-decoration: none;
+}
+
+.blog-home-link:hover {
+    color: #2563eb;
+}
+
+.blog-title {
+    font-size: 28px;
+    line-height: 1.3;
+    margin-top: 16px;
+    margin-bottom: 8px;
+}
+
+.blog-subtitle {
+    font-size: 18px;
+    font-style: italic;
+    color: #555;
+    margin-bottom: 8px;
+}
+
+.blog-date {
+    font-size: 14px;
+    color: #888;
+    margin-bottom: 0;
+}
+
+.blog-content h2 {
+    font-size: 22px;
+    margin-top: 40px;
+    margin-bottom: 16px;
+    color: #222;
+}
+
+.blog-content p {
+    margin-bottom: 16px;
+    font-size: 16px;
+    line-height: 1.75;
+}
+
+.blog-content ol {
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+
+.blog-content ol li {
+    margin-bottom: 12px;
+    line-height: 1.75;
+}
+
+.blog-content code {
+    background-color: #f0ece3;
+    padding: 2px 6px;
+    border-radius: 3px;
+    font-size: 14px;
+}
+
+.blog-tldr {
+    background-color: #f0ece3;
+    border-left: 3px solid #2563eb;
+    padding: 16px 20px;
+    margin-bottom: 32px;
+    border-radius: 0 4px 4px 0;
+}
+
+.blog-sidenote {
+    font-size: 14px;
+    color: #888;
+    font-style: italic;
+    border-left: 2px solid #ccc;
+    padding-left: 12px;
+    margin: 16px 0;
+}
+
+.blog-footer {
+    margin-top: 60px;
+    padding-top: 20px;
+    border-top: 1px solid #ddd;
+    font-size: 14px;
+}
+
+/* Blog index page */
+.blog-index {
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 40px 20px;
+}
+
+.blog-index h1 {
+    margin-bottom: 4px;
+}
+
+.blog-index-heading {
+    font-size: 22px;
+    color: #666;
+    font-weight: 400;
+    margin-bottom: 32px;
+}
+
+.blog-list {
+    list-style: none;
+    margin-left: 0;
+}
+
+.blog-list li {
+    margin-bottom: 16px;
+    display: flex;
+    flex-direction: column;
+}
+
+.blog-list-title {
+    font-size: 17px;
+    font-weight: 500;
+}
+
+.blog-list-date {
+    font-size: 14px;
+    color: #888;
+    margin-top: 2px;
+}
+
 /* Responsive design */
 @media (max-width: 768px) {
     .row {
